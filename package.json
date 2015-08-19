@@ -1,0 +1,41 @@
+{
+  "name": "ayudants",
+  "version": "0.1.0",
+  "description": "Classroom structure helper to use as Github Students suggests",
+  "main": "index.js",
+  "preferGlobal": "true",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mrpatiwi/AyudanTS.git"
+  },
+  "keywords": [
+    "uc",
+    "dcc",
+    "node",
+    "module",
+    "typescript",
+    "teachers_pet"
+  ],
+  "author": "Patricio López <lopezjuripatricio@gmail.com> (https://lopezjuri.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrpatiwi/AyudanTS/issues"
+  },
+  "homepage": "https://github.com/mrpatiwi/AyudanTS#readme",
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "octokat": "^0.4.11"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "gulp": "^3.9.0",
+    "gulp-typedoc": "^1.2.1",
+    "gulp-typescript": "^2.8.0",
+    "merge2": "^0.3.6",
+    "mocha": "~2.2.5",
+    "typedoc": "^0.3.8"
+  }
+}
