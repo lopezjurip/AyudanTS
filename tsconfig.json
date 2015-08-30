@@ -33,6 +33,7 @@
         "./typings/bluebird/bluebird.d.ts",
         "./typings/mkdirp/mkdirp.d.ts",
         "./typings/node/node.d.ts",
-        "./typings/tsd.d.ts"
+        "./typings/tsd.d.ts",
+        "./typings/yargs/yargs.d.ts"
     ]
 }

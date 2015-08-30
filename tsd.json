@@ -13,6 +13,9 @@
     },
     "bluebird/bluebird.d.ts": {
       "commit": "bb45306d0fd8ce0852a8d24c023fd787f4151e65"
+    },
+    "yargs/yargs.d.ts": {
+      "commit": "d2bab5738b84b91d8ee18a68c7b379a9714cf82f"
     }
   }
 }

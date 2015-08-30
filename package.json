@@ -32,7 +32,8 @@
     "babyparse": "^0.4.3",
     "bluebird": "^2.9.34",
     "mkdirp": "^0.5.1",
-    "octokat": "^0.4.11"
+    "octokat": "^0.4.11",
+    "yargs": "^3.22.2"
   },
   "devDependencies": {
     "chai": "^3.2.0",
