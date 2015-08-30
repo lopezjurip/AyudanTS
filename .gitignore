@@ -1,7 +1,7 @@
 # Node
 
 # Compiled
-bin
+build
 
 # Tests should be transpiled locally
 definitions/test

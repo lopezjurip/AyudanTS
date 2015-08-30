@@ -1,3 +1,5 @@
+/// <reference path="../../typings/tsd.d.ts"/>
+
 import {parse} from 'babyparse'
 import {readFileSync} from 'fs'
 import {IRepositoryInfo} from './git';

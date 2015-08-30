@@ -14,7 +14,7 @@
         "sourceMap": false,
         "declaration": false,
         "rootDir": "lib",
-        "outDir": "bin"
+        "outDir": "build"
     },
     "filesGlob": [
         "./**/*.ts",
@@ -22,13 +22,11 @@
         "!./node_modules/**/*"
     ],
     "files": [
-        "./bin/course.d.ts",
-        "./bin/entities.d.ts",
-        "./bin/repository.d.ts",
-        "./bin/student.d.ts",
-        "./lib/course.ts",
-        "./lib/entities.ts",
-        "./lib/git.ts",
+        "./lib/commands/create-teams.ts",
+        "./lib/common/course.ts",
+        "./lib/common/entities.ts",
+        "./lib/common/git.ts",
+        "./lib/main.ts",
         "./typings/babyparse/babyparse.d.ts",
         "./typings/bluebird/bluebird.d.ts",
         "./typings/mkdirp/mkdirp.d.ts",

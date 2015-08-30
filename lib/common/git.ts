@@ -1,6 +1,4 @@
-/// <reference path="../typings/node/node.d.ts"/>
-/// <reference path="../typings/mkdirp/mkdirp.d.ts"/>
-/// <reference path="../typings/bluebird/bluebird.d.ts"/>
+/// <reference path="../../typings/tsd.d.ts"/>
 
 import {resolve, dirname} from 'path'
 import mkdirp = require('mkdirp')
@@ -40,6 +38,14 @@ export interface ICreateRepo {
     auto_init?: boolean
     gitignore_template?: string
     license_template?: string
+}
+
+export interface ICreateIssue {
+    title: string
+    body?: string
+    assignee?: string
+    milestone?: number
+    labels?: string[]
 }
 
 export class GitManager {
@@ -90,7 +96,7 @@ export class Repository {
         return this.repo.repo.create(params)
     }
 
-    public download(path: string): Promise<FilePath[]> {
+    public download(path: string = '/'): Promise<FilePath[]> {
         return this.repo.contents(path).fetch().then(contents => {
             let collection: any[] = (contents instanceof Array) ? contents : [contents]
             return Promise.all(collection.map(content => {
@@ -163,5 +169,9 @@ export class Repository {
         }).then(result => {
             return result
         })
+    }
+
+    public createIssue(options: ICreateIssue): Promise<any> {
+        return this.repo.issues.create(options)
     }
 }

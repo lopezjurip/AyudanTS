@@ -5,7 +5,7 @@
   "main": "index.js",
   "preferGlobal": "true",
   "bin": {
-    "ayudants": "index.js"
+    "ayudants": "bin/ayudants"
   },
   "scripts": {
     "test": "test"
@@ -16,11 +16,13 @@
   },
   "keywords": [
     "uc",
+    "puc",
     "dcc",
     "node",
     "module",
     "typescript",
-    "teachers_pet"
+    "teachers_pet",
+    "students"
   ],
   "author": "Patricio López <lopezjuripatricio@gmail.com> (https://lopezjuri.com)",
   "license": "MIT",
