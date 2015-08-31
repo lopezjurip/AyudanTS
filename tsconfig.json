@@ -22,10 +22,11 @@
         "!./node_modules/**/*"
     ],
     "files": [
-        "./lib/commands/create-teams.ts",
+        "./lib/commands/members.ts",
         "./lib/common/course.ts",
         "./lib/common/entities.ts",
         "./lib/common/git.ts",
+        "./lib/error-message.ts",
         "./lib/main.ts",
         "./typings/babyparse/babyparse.d.ts",
         "./typings/bluebird/bluebird.d.ts",
