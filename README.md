@@ -1,8 +1,8 @@
-# AyudanTS
+# AyudanTS [![Build Status](https://travis-ci.org/mrpatiwi/AyudanTS.svg?branch=development)](https://travis-ci.org/mrpatiwi/AyudanTS)
 
 > En desarrollo
 
-Linea de comandos para facilitar la administración de los repositorios para los ramos del Departamento de Ciencia de la Computación de la Pontificia Universidad Católica de Chile.
+Linea de comandos para facilitar la administración de los repositorios para los ramos del Departamento de Ciencia de la Computación (DCC) de la Pontificia Universidad Católica de Chile.
 
 La metodología está basada en la [Classroom guide de Github](https://education.github.com/guide) y en su gema [teachers_pet](https://github.com/education/teachers_pet).
 
@@ -10,7 +10,7 @@ También es posible incluir este paquete en un proyecto [Node.js](nodejs.org) (J
 
 ## Instalación
 
-Asegúrate de tener instalado [Node.js](nodejs.org). Recomiendo hacerlo por medio de [Homebrew](http://brew.sh/) para OSX y [Chocolatey](chocolatey.org) para Windows.
+Asegúrate de tener instalado [Node.js](nodejs.org). Recomiendo hacerlo por medio de [Homebrew](http://brew.sh/) para OSX o [Chocolatey](chocolatey.org) para Windows.
 
 ### Global: linea de comandos
 ```sh
