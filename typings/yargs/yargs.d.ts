@@ -81,6 +81,8 @@ declare module "yargs" {
 
 			showHelp(func?: (message: string) => any): Argv;
 
+			reset(): Argv;
+
 			/* Undocumented */
 
 			normalize(key: string): Argv;

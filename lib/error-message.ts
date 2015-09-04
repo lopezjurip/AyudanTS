@@ -1,3 +1,3 @@
 export default function error(message: string): string {
-    return "Error:\n  " + message
+    return "Error:\n  " + message;
 }
