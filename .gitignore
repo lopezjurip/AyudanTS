@@ -3,6 +3,9 @@
 # Compiled
 build
 
+# some outputs
+course.json
+
 # Tests should be transpiled locally
 definitions/test
 lib/test
