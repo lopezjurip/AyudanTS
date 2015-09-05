@@ -53,7 +53,11 @@ declare module "yargs" {
 			usage(message: string, options?: { [key: string]: Options }): Argv;
 			usage(options?: { [key: string]: Options }): Argv;
 
-			command(command: string, description: string): Argv;
+			command(command: string, description: string, args?: (yargs: Argv) => void ): Argv;
+
+			epilog(epilog: string): Argv;
+
+			terminalWidth(): number;
 
 			example(command: string, description: string): Argv;
 
@@ -65,8 +69,8 @@ declare module "yargs" {
 			string(key: string): Argv;
 			string(keys: string[]): Argv;
 
-			config(key: string): Argv;
-			config(keys: string[]): Argv;
+			config(key: string, description?: string): Argv;
+			config(keys: string[], description?: string): Argv;
 
 			wrap(columns: number): Argv;
 
@@ -80,8 +84,6 @@ declare module "yargs" {
 			showHelpOnFail(enable: boolean, message?: string): Argv;
 
 			showHelp(func?: (message: string) => any): Argv;
-
-			reset(): Argv;
 
 			/* Undocumented */
 
@@ -103,6 +105,7 @@ declare module "yargs" {
 			demand?: any;
 			required?: any;
 			require?: any;
+			choices?: any[];
 			default?: any;
 			boolean?: any;
 			string?: any;

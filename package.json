@@ -8,7 +8,9 @@
     "ayudants": "bin/ayudants"
   },
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "dev": "gulp && npm link && rm course.json",
+    "sample": "ayudants init --name IIC2233-2015-2 -p github -m individual -f"
   },
   "repository": {
     "type": "git",
@@ -35,15 +37,15 @@
     "bluebird": "^2.9.34",
     "mkdirp": "^0.5.1",
     "octokat": "^0.4.11",
-    "yargs": "^3.22.2"
+    "yargs": "^3.24.0"
   },
   "devDependencies": {
     "chai": "^3.2.0",
     "gulp": "^3.9.0",
     "gulp-typedoc": "^1.2.1",
-    "gulp-typescript": "^2.8.0",
+    "gulp-typescript": "^2.8.2",
     "merge2": "^0.3.6",
-    "mocha": "~2.2.5",
+    "mocha": "^2.3.0",
     "typedoc": "^0.3.8"
   }
 }

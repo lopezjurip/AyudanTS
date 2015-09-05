@@ -23,11 +23,9 @@
     ],
     "files": [
         "./lib/commands/init.ts",
-        "./lib/commands/members.ts",
         "./lib/common/course.ts",
         "./lib/common/entities.ts",
         "./lib/common/git.ts",
-        "./lib/error-message.ts",
         "./lib/main.ts",
         "./lib/util.ts",
         "./typings/babyparse/babyparse.d.ts",
