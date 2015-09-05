@@ -5,3 +5,4 @@ export function current_working_directory(): String {
 }
 
 export var version = require("../package").version;
+export var author = require("../package").author;

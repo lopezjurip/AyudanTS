@@ -1,7 +1,7 @@
 /// <reference path="../typings/tsd.d.ts"/>
 
 import yargs = require("yargs");
-import {version} from "./util";
+import {version, author} from "./util";
 
 const courseFile = "course.json";
 const coursePath = "./" + courseFile;
@@ -70,7 +70,7 @@ var argv = yargs.usage(`Usage: $0 <command> [--course=<path>] [--help]`)
     .version(version).alias("v", "version")
     .help("help").alias("h", "help")
     .wrap(widht)
-    .epilog(require("../package").author)
+    .epilog(author)
     .argv;
 
 const command = argv._[0];
