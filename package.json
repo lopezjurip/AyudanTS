@@ -8,8 +8,8 @@
     "ayudants": "bin/ayudants"
   },
   "scripts": {
-    "test": "test",
-    "dev": "gulp && npm link && rm course.json",
+    "local": "gulp && npm link",
+    "start": "npm run local && ayudants --help",
     "sample": "ayudants init --name IIC2233-2015-2 -p github -m individual -f"
   },
   "repository": {
